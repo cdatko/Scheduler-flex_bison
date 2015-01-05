@@ -1,0 +1,151 @@
+--------------------------------------
+	needs
+--------------------------------------
+[[ece2090,4,th,9,12],
+[ece2095,4,f,9,12],
+[ece3090,1,tu,1,3]]
+
+	found valid ’needs’ list’
+
+[[ece2010,4,f,9,12],
+[ece2345,4,w,9,12],
+[ece1010,1,tu,1,3]]
+
+	found valid ’needs’ list’
+
+[[ece2090,4,w,3,12],
+[ece2095,4,w,3,12],
+[ece3090,1,th,3,12]]
+
+	found valid ’needs’ list’
+
+{[ece2090,4,w,3,12]}
+
+	syntax error
+
+[[econ2090,4,w,3,12],
+[chem3090,1,th,3,12]]
+
+	syntax error
+
+[(ece2090,4,w,3,12),
+(ece2095,4,w,3,12),
+(ece3090,1,th,3,12)]
+
+	syntax error
+
+--------------------------------------
+	unavailable_list
+--------------------------------------
+
+[[m,7,9]]
+
+	found valid 'unavailable_list'
+
+[[m,7,9],[f,13,16]]
+
+	found valid 'unavailable_list'
+
+[[tu,7,9],[w,13,16],[th,1,3]]
+
+	found valid 'unavailable_list'
+
+{[m,7,9]}
+
+	syntax error
+
+[{m,7,9}]
+
+	syntax error
+
+[[7,9,m]]
+
+	syntax error
+
+--------------------------------------
+	course_capabilities_list
+--------------------------------------
+
+[ece1090]
+
+	found valid ’course_capabilities’ list
+
+[ece1090,ece2010]
+
+	found valid ’course_capabilities’ list
+
+[ece1090,ece2010,ece2520]
+
+	found valid ’course_capabilities’ list
+
+ece2090,ece2010
+
+	syntax error
+
+[ece2090 ece2010]
+
+	syntax error
+
+(ece2090,ece2010)
+
+	syntax error
+
+--------------------------------------
+	resources_entry
+--------------------------------------
+
+[sam, [ece2010],[[m,7,9]]]
+
+	found valid 'resource_entry' list
+
+[bobby, [ece2010,ece4420],[]]
+
+	found valid 'resource_entry' list
+
+[christopher, [ece4420],[[f,1,3]]]
+
+	found valid 'resource_entry' list
+
+[christopher, [ece4420],[f,1,3]]
+
+	syntax error
+
+[christopher, [ece4420]]
+
+	syntax error
+
+[christopher, [ece4420], ]
+
+	syntax error
+
+--------------------------------------
+	resources
+--------------------------------------
+
+[[bobby, [ece2090,ece2010,ece3520,ece4420],[[m,8,9]]],
+[chris, [ece2010,ece4420],[[tu 9,11],[th,9,11]]]]
+
+	found valid 'resources list'
+
+[[john, [ece2090,ece2010,ece3520,ece4420],[[m,8,9]]],
+[drew, [ece2010,ece4420],[[tu 9,11],[th,9,11]]],
+[matt, [ece3520,ece4420],[]]]
+
+	found valid 'resources list'
+
+[[christopher, [ece2090,ece2010,ece3520,ece4420],[[m,8,9]]]]
+
+	found valid 'resources list'
+
+{[christopher, [ece2090,ece2010,ece3520,ece4420],[[m,8,9]]]}
+
+	syntax error
+
+[[christopher, [ece2090,ece2010,ece3520,ece4420],[[m,8,9]]]
+
+	syntax error
+
+[[christopher, [ece2090,ece2010,ece3520,ece4420],[m,8,9]]]
+
+	syntax error
+
